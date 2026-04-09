@@ -1,0 +1,18 @@
+media = [
+    {"title": "Trojan Horse", "artist": "Dave,Central Cee", "genre": "Hip-Hop/rap", "album": "Split Decision", "year": "2023","duration": "3:56", "tags": "#Uk rap"},
+    {"title": "Funky Friday", "artist": "Dave,Fredo", "genre": "Uk rap/grime", "album": "Singel", "year": "2018", "duration": "3.02", "tags": "#Uk rap"},
+    {"title": "Lazarus", "artist": "Dave,Boj", "genre": "Uk rap/jazz", "album": "We're All Alone In This Together", "year": "2021", "druation": "3:24", "tags": "#Hip-Hop/rap"},
+    {"title": "Clash", "artist": "Dave,Stormzy", "genre": "Uk rap/drill", "album": "We're All Alone In This Together", "year": "2021", "duration": "4:12", "tags": "#Uk rap"},
+    {"title": "Calling me out", "aritst": "Dave", "genre": "Hip-Hop/rap", "album": "Game Over", "year": "2017", "duration": "2:55", "tags": "#Uk rap"},
+    {"title": "Six Paths", "artist": "Dave", "genre": "Uk rap/grime", "album": "Six Paths", "year": "2016", "duration": "3:43", "tags": "#Uk rap"},
+    {"title": "DILEMMA", "artist": "Nemzzz,Central Cee", "genre": "Hip-Hop/rap", "album": "RENT'S DUE (DELUXE)", "year": "2025", "duration": "2:34", "tags": "#Uk rap"},
+    {"title": "Both Sides Of A Smile", "artist": "Dave,James Blake", "genre": "Uk rap/soul", "album": "We're All Alone In This Together", "year": "2021", "duration": "7:52", "tags": "#Uk rap"},
+    {"title": "KMT","artist": "Drake,Giggs", "genre": "Hip-Hop/trap", "album": "More Life", "year": "2017", "duration": "2:42", "tags": "#Hip-Hop/Rap"},
+    {"title": "6 For 6","artist": "Central Cee", "genre": "Uk rap/drill", "album": "Wild West", "year": "2021", "duration": "2:08", "tags": "#Uk rap"},
+    {"title": "Scewface Capital","artist": "Dave", "genre": "Uk rap/Hip-Hop", "album": "PSYCHODRAMA", "year": "2019 ", "duration": "4:03", "tags": "#Uk rap"},
+    {"title": "Never Recover","artist": "Lil Baby,Gunna,Drake", "genre": "Hip-Hop/rap", "album": "Drip Harder", "year": "2018", "duration": "3:00", "tags": "#Hip-Hop/Rap"},
+    {"title": "No Words","artist": "Dave,MoStack", "genre": "Uk rap/afroswing", "album": "Game Over", "year": "2017", "duration": "3:05", "tags": "#Uk rap"},
+    {"title": "The Boy Who Played The Harp","artist": "Dave", "genre": "Uk rap/conscious", "album": "The Boy Who Played The Harp", "year": "2025", "duration": "4:29", "tags": "#Uk rap"},
+    {"title": "Raindance","artist": "Dave,Tems", "genre": "Afrofusion/melodic rap", "album": "The Boy Who Played The Harp", "year": "2025", "duration": "3:29", "tags": "#Afromusic"},
+    {"title": "Starlight","artist": "Dave", "genre": "Uk rap/melodic rap", "album": "single", "year": "2022", "duration": "3:10", "tags": "#Melodic rap"},
+    ]
