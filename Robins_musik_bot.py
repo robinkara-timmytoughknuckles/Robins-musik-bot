@@ -1,5 +1,5 @@
 
-
+# Lista med musik och information om varje låt
 music = [
     # --- Dave ---
     {"title": "Trojan Horse", "artist": "Dave,Central Cee", "genre": "Hip-Hop", "album": "Split Decision", "year": "2023","duration": "3:56", "mood": "energetic"},
@@ -26,26 +26,39 @@ music = [
     {"title": "DILEMMA", "artist": "Nemzzz,Central Cee", "genre": "Hip-Hop", "album": "RENT'S DUE (DELUXE)", "year": "2025", "duration": "2:34", "mood": "chill"},
 ]
 
-
+# Funktion som kör musik-boten
 def run_music_bot():
-    best_score = 0
-    best_music = ""
-
-    for song in music:
-        genre = input("What genre do you want to listen to?\n").strip().lower()
-        mood = input("What mood do you want to listen to?\n(energetic, playful, reflective, aggressive, confident, ambitious, sad, upbeat, romantic, love, intense, chill)\n").strip().lower()
-        score = 0
-        if song["genre"] == genre:
-            score += 2 
-        if song["mood"] == mood:
-            score += 2
-        if score > best_score:
-            best_score = score
-            best_music = song["title"]
-        if best_music:
-            print("Recommendation:", best_music)
-        else:
-           print("No matching songs found. Try different genre or mood.")
-        break 
-       
+        # Programmet fortsätter tills användaren skriver nej
+    while True:
+         # Går igenom alla låtar i listan
+        for song in music:
+            # ger värde till score och music som kommer att användas senare
+            best_score = 0
+            best_music = ""
+            # Frågar användaren vilken genre hen vill lyssna på och vilken mood
+            genre = input("What genre do you want to listen to?\n").strip().lower()
+            mood = input("What mood do you want to listen to?\n(energetic, playful, reflective, aggressive, confident, ambitious, sad, upbeat, romantic, love, intense, chill)\n").strip().lower()
+            #sätter score till 0
+            score = 0
+            # Ger poäng om genre matchar
+            if song["genre"] == genre:
+                score += 2  
+            # Ger poäng om mood matchar
+            if song["mood"] == mood:
+                score += 2
+            if score > best_score:
+                best_score = score
+                best_music = song["title"]
+            # Skriver ut rekommendationen
+            if best_music:
+                print("Recommendation:", best_music)
+            else: 
+                print("Sorry, no music found matching your preferences.")
+            # Frågar om användaren vill fortsätta
+            user_choice= input("Do you want another recommendation? (yes/no)\n").strip().lower()
+            # Avslutar programmet om användaren skriver no
+            if user_choice == "no":
+                print("Goodbye! Have a good day")
+                break
+#startar programmet      
 run_music_bot()
