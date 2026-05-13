@@ -1,5 +1,4 @@
-genre = input("What genre do you want to listen to?\n").strip().lower()
-mood = input("What mood do you want to listen to?\n(energetic, playful, reflective, aggressive, confident, ambitious, sad, upbeat, romantic, love, intense, chill)\n").strip().lower()
+
 
 music = [
     # --- Dave ---
@@ -27,47 +26,26 @@ music = [
     {"title": "DILEMMA", "artist": "Nemzzz,Central Cee", "genre": "Hip-Hop", "album": "RENT'S DUE (DELUXE)", "year": "2025", "duration": "2:34", "mood": "chill"},
 ]
 
+
 def run_music_bot():
     best_score = 0
     best_music = ""
 
-    while True:
-        for music in music:
-            score = 0
-            if music["genre"] == genre:
-                score += 2
-            if music["mood"] == mood:
-                score += 2
-            if score > best_score:
-                best_score = score
-                best_music = music["title"]
-        print("Recommendation:", best_music)
-        break
-
-
-
-#run_jadgpt function is the main function that runs the chatbot, it welcomes the user and then enters a loop where it takes user input and finds a response until the user says a farewell word, at which point it says goodbye and exits the loop
-#def run_Jadgpt():
- #   print("=" * 50)
-  #  print("Welcome to JadGPT! Type 'exit' to quit.")
-   # print("=" * 50)
-   #
-#    farewell_words = ["exit", "quit", "goodbye", "bye", "see you later", "farewell","later", "cya", "see ya", "peace out", "take care"]
-#
- #   while True:
-  #      user_input = input("\nYou: ").strip()
-   #     
-    #    if not user_input:
-     #       continue
-     #
-   #     response = find_response(user_input)
-   #
-       # if response is not None:
-        #    print(f"\nJadGPT: {response}")
-
-       # if any(word in user_input.lower() for word in farewell_words):
-        #    print("\nJadGPT: Goodbye! Have a great day!")
-         #   break
-#if __name__ == "__main__":
-    #start the chatbot
- #   run_Jadgpt()
+    for song in music:
+        genre = input("What genre do you want to listen to?\n").strip().lower()
+        mood = input("What mood do you want to listen to?\n(energetic, playful, reflective, aggressive, confident, ambitious, sad, upbeat, romantic, love, intense, chill)\n").strip().lower()
+        score = 0
+        if song["genre"] == genre:
+            score += 2 
+        if song["mood"] == mood:
+            score += 2
+        if score > best_score:
+            best_score = score
+            best_music = song["title"]
+        if best_music:
+            print("Recommendation:", best_music)
+        else:
+           print("No matching songs found. Try different genre or mood.")
+        break 
+       
+run_music_bot()
